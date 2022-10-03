@@ -17,68 +17,68 @@ Fork and clone this repository and answer questions as you research directly in 
 ## Questions:
 
 1. What does the term noSQL refer to, and what other term is often used synonymously with noSQL?
-* 'Not only SQL' a non-relational database that store data differently from relational tables. 
-* It uses documents instead of tables.
-* Does not use rows/columns
-* Can be both tabular and non-tabular
+  * 'Not only SQL' a non-relational database that store data differently from relational tables. 
+  * It uses documents instead of tables.
+  * Does not use rows/columns
+  * Can be both tabular and non-tabular
 
 1. What are some of the common arguments for using a non-relational versus a relational db?
-* Greater scalability (in terms of changing data structure)
-* Personal preference
-* Don't have to worry about avoiding data duplication (due to lowered storage costs)
-* Optimized for developer productivity
-* Allows devs to store huge amounts of unstructured data, giving more flexibility to adapt to changes
+  * Greater scalability (in terms of changing data structure)
+  * Personal preference
+  * Don't have to worry about avoiding data duplication (due to lowered storage costs)
+  * Optimized for developer productivity
+  * Allows devs to store huge amounts of unstructured data, giving more flexibility to adapt to changes
 
 1. In this class we will be using the document style of non-relational databases. What are the charecteristics of a document based db? 
-* Store data in documents similar to JSON (JavaScript Object Notation) objects. 
-* Key/value pairs -- values are a variety of supported types
-* Allows for the data model to evolve vs having a rigorous structure
-* No enforced schema
+  * Store data in documents similar to JSON (JavaScript Object Notation) objects. 
+  * Key/value pairs -- values are a variety of supported types
+  * Allows for the data model to evolve vs having a rigorous structure
+  * No enforced schema
 
 1. In this class we will be using Mongo specificially as our no-SQL db. Look into Mongo and answer this question: what is the primary difference between how Mongo is maintained vs SQL?
-* Mongo is more advanced and capable of handling big data with dynamic schema features. MongoDB is used to save unstructured data in JSON format.
-* MongoDB is open source, made by a smaller company. One implementation to rule them all with Mongo. One team makes all of the Mongo tools. Tight integration of all mongo features. 
-* Some versions of SQL are closed source (Oracle, MySQL, Microsoft SQL Server), though some versions are open source (PostgreSQL, SQLite)
+  * Mongo is more advanced and capable of handling big data with dynamic schema features. MongoDB is used to save unstructured data in JSON format.
+  * MongoDB is open source, made by a smaller company. One implementation to rule them all with Mongo. One team makes all of the Mongo tools. Tight integration of all mongo features. 
+  * Some versions of SQL are closed source (Oracle, MySQL, Microsoft SQL Server), though some versions are open source (PostgreSQL, SQLite)
 
 1. Mongo DBs are organized into documents. Describe an example of a table in SQL that contains users, and then describe the equivalent DB setup in Mongo. 
-* user -> blog (in SQL use etiher FK or join)
-* Mongo woul dhave embedded objects or 'sub documents'
-  * { userName, email, blogs: [{ blog }, { blog }] }
+  * user -> blog (in SQL use etiher FK or join)
+  * Mongo woul dhave embedded objects or 'sub documents'
+    * { userName, email, blogs: [{ blog }, { blog }] }
 
 1. What is an example situation where a Mongo database makes sense versus a non-relational db?
-* Fast paced development when the data models might change frequently
-* Adding features to the database
-* Situations that involve collaborations between lots of teams
+  * Fast paced development when the data models might change frequently
+  * Adding features to the database
+  * Situations that involve collaborations between lots of teams
 
 1. What are the benefits of SQL databases? NoSQL Databases?
-* SQL benefits: 
-  * Vertical scaling (scale-up with a larger server) 
-  * Multi-record ACID transactions are supported
-  * Commonality of language, lack of complex code
-  * Established an used many places
-* NoSQL benefits:
-  * Familiar languages to devs
-  * 'data that is accessed together should be stored together'
-  * Flexible data models
-  * Horizontal scaling 
-  * Fast queries, easy for developers
+  * SQL benefits: 
+    * Vertical scaling (scale-up with a larger server) 
+    * Multi-record ACID transactions are supported
+    * Commonality of language, lack of complex code
+    * Established an used many places
+  * NoSQL benefits:
+    * Familiar languages to devs
+    * 'data that is accessed together should be stored together'
+    * Flexible data models
+    * Horizontal scaling 
+    * Fast queries, easy for developers
 
 1. Explain the differences between ACID and BASE models.
-* ACID:
-  * Atomic (Each transaction is either properly carried out or the process halts and the database reverts back to the state before the transaction started. This ensures that all data in the database is valid.)
-  * Consistent (A processed transaction will never endanger the structural integrity of the database.)
-  * Isolated (Transactions cannot compromise the integrity of other transactions by interacting with them while they are still in progress.)
-  * Durable (The data related to the completed transaction will persist even in the cases of network or power outages. If a transaction fails, it will not impact the manipulated data.)
-* BASE:
-  * Basically Available (Rather than enforcing immediate consistency, BASE-modelled NoSQL databases will ensure availability of data by spreading and replicating it across the nodes of the database cluster.)
-  * Soft State (Due to the lack of immediate consistency, data values may change over time. The BASE model breaks off with the concept of a database which enforces its own consistency, delegating that responsibility to developers.)
-  * Eventually Consistent (The fact that BASE does not enforce immediate consistency does not mean that it never achieves it. However, until it does, data reads are still possible (even though they might not reflect the reality)
+  * ACID:
+    * Atomic (Each transaction is either properly carried out or the process halts and the database reverts back to the state before the transaction started. This ensures that all data in the database is valid.)
+    * Consistent (A processed transaction will never endanger the structural integrity of the database.)
+    * Isolated (Transactions cannot compromise the integrity of other transactions by interacting with them while they are still in progress.)
+    * Durable (The data related to the completed transaction will persist even in the cases of network or power outages. If a transaction fails, it will not impact the manipulated data.)
+  * BASE:
+    * Basically Available (Rather than enforcing immediate consistency, BASE-modelled NoSQL databases will ensure availability of data by spreading and replicating it across the nodes of the database cluster.)
+    * Soft State (Due to the lack of immediate consistency, data values may change over time. The BASE model breaks off with the concept of a database which enforces its own consistency, delegating that responsibility to developers.)
+    * Eventually Consistent (The fact that BASE does not enforce immediate consistency does not mean that it never achieves it. However, until it does, data reads are still possible (even though they might not reflect the reality)
 
 1. What should you consider when deciding between using a relational database or a non-relational database for your project?
-* Personal preference
-* Scale of traffic
-* Speed
-* What kind of flexibility will you 
+  * Personal preference
+  * Scale of traffic
+  * Speed
+  * What kind of flexibility will you 
 
 ## Visual Comparisons
 
